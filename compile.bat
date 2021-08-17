@@ -1,0 +1,1 @@
+cl.exe .\com_hijacking.cpp /D_USRDLL /D_WINDLL /link /DLL /OUT:com_hijacking.dll
