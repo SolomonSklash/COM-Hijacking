@@ -1,0 +1,5 @@
+EXPORTS
+        DllCanUnloadNow="C:\Windows\System32\wbem\wbemprox.Dll".DllCanUnloadNow @1
+        DllGetClassObject="C:\Windows\System32\wbem\wbemprox.Dll".DllGetClassObject @2
+        DllRegisterServer="C:\Windows\System32\wbem\wbemprox.Dll".DllRegisterServer @3
+        DllUnregisterServer="C:\Windows\System32\wbem\wbemprox.Dll".DllUnregisterServer @4

