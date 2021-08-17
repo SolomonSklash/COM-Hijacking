@@ -13,7 +13,7 @@ An example of COM hijacking using a proxy DLL.
 - Copy the DLL to the path in `modify-registry.reg`, in this case `C:\Windows\Temp`
 - Run `getmac` and see message box
 
-## Reference
+## References
 
 - https://attackiq.com/2020/03/26/component-object-model-hijacking/
 - https://github.com/tothi/dll-hijack-by-proxying
