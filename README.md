@@ -7,7 +7,7 @@ An example of COM hijacking using a proxy DLL.
 - Generate the forward definitions for MinGW or MSVC
   - Copy wbemprox DLL to current directory
   - `python3 ./generate-exports.py .\wbemprox.dll 'C:\\Windows\\System32\\wbem\\wbemprox.Dll'`
-  - Copy output to `com_hijacking.cpp`
+  - Copy MSVC output to `com_hijacking.cpp` or MinGW output to `exports.def`
 - Compile with script for MinGW or for MSVC: `cl.exe .\com_hijacking.cpp /D_USRDLL /D_WINDLL /link /DLL /OUT:com_hijacking.dll`
 - Create registry entry from low or medium privilege user by running `modify-registry.reg`
 - Copy the DLL to the path in `modify-registry.reg`, in this case `C:\Windows\Temp`
