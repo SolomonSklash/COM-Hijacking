@@ -12,3 +12,8 @@ An example of COM hijacking using a proxy DLL.
 - Create registry entry from low or medium privilege user by running `modify-registry.reg`
 - Copy the DLL to the path in `modify-registry.reg`, in this case `C:\Windows\Temp`
 - Run `getmac` and see message box
+
+## Reference
+
+- https://attackiq.com/2020/03/26/component-object-model-hijacking/
+- https://github.com/tothi/dll-hijack-by-proxying
