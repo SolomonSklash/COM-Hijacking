@@ -17,7 +17,7 @@ for export in dll.DIRECTORY_ENTRY_EXPORT.symbols:
     if export.name:
         print('\t{}="{}".{} @{}'.format(export.name.decode(), path, export.name.decode(), export.ordinal))
 
-print("MSVC:\nEXPORTS")
+print("MSVC:")
 for export in dll.DIRECTORY_ENTRY_EXPORT.symbols:
     if export.name:
-        print('\t#pragma comment(linker, "/export:{}=\\"{}.{}\\"")'.format(export.name.decode(), path, export.name.decode()))
+        print('#pragma comment(linker, "/export:{}=\\"{}.{}\\"")'.format(export.name.decode(), path, export.name.decode()))
