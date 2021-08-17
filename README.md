@@ -4,7 +4,7 @@ An example of COM hijacking using a proxy DLL.
 
 ## Demo using getmac/wbemprox.dll
 
-- Generate the forward definitions for MinGW or MSVC
+- Generate the forward exports for MinGW or MSVC
   - Copy wbemprox DLL to current directory
   - `python3 ./generate-exports.py .\wbemprox.dll 'C:\\Windows\\System32\\wbem\\wbemprox.Dll'`
   - Copy MSVC output to `com_hijacking.cpp` or MinGW output to `exports.def`
